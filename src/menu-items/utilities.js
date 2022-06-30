@@ -26,13 +26,6 @@ const utilities = {
     type: 'group',
     children: [
         {
-            id: 'util-color',
-            title: 'Color',
-            type: 'item',
-            url: '/color',
-            icon: icons.BgColorsOutlined
-        },
-        {
             id: 'util-shadow',
             title: 'Shadow',
             type: 'item',
