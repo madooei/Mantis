@@ -26,13 +26,6 @@ const utilities = {
     type: 'group',
     children: [
         {
-            id: 'util-typography',
-            title: 'Typography',
-            type: 'item',
-            url: '/typography',
-            icon: icons.FontSizeOutlined
-        },
-        {
             id: 'util-color',
             title: 'Color',
             type: 'item',
