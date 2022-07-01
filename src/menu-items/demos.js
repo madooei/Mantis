@@ -5,9 +5,9 @@ const icons = {
   QuestionOutlined,
 };
 
-export const support = {
-  id: "support",
-  title: "Support",
+export const demos = {
+  id: "demos",
+  title: "Demo Pages",
   type: "group",
   children: [
     {
@@ -15,6 +15,13 @@ export const support = {
       title: "Sample Page",
       type: "item",
       url: "/sample-page",
+      icon: icons.ChromeOutlined,
+    },
+    {
+      id: "react-query",
+      title: "React Query",
+      type: "item",
+      url: "/react-query",
       icon: icons.ChromeOutlined,
     },
   ],

@@ -1,7 +1,7 @@
 import { pages } from "./pages";
 import { dashboard } from "./dashboard";
-import { support } from "./support";
+import { demos } from "./demos";
 
 export const menuItems = {
-  items: [dashboard, pages, support],
+  items: [dashboard, pages, demos],
 };
