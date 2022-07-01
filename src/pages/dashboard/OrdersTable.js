@@ -14,7 +14,7 @@ import {
   Typography,
 } from "@mui/material";
 import NumberFormat from "react-number-format";
-import Dot from "components/@extended/Dot";
+import Dot from "components/Dot";
 
 function createData(trackingNo, name, fat, carbs, protein) {
   return { trackingNo, name, fat, carbs, protein };

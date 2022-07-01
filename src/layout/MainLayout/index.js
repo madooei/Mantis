@@ -6,7 +6,7 @@ import { Box, Toolbar, useMediaQuery } from "@mui/material";
 import Drawer from "./Drawer";
 import Header from "./Header";
 import { menuItems } from "menu-items";
-import Breadcrumbs from "components/@extended/Breadcrumbs";
+import Breadcrumbs from "components/Breadcrumbs";
 import { openDrawer } from "store/reducers/menu";
 
 function MainLayout() {

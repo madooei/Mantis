@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { forwardRef } from "react";
-import MainCardFooter from "./third-party/MainCardFooter";
+import MainCardFooter from "./MainCardFooter";
 import { useTheme } from "@mui/material/styles";
 import {
   Card,
@@ -104,6 +104,8 @@ const MainCard = forwardRef(
   }
 );
 
+export default MainCard;
+
 MainCard.propTypes = {
   border: PropTypes.bool,
   boxShadow: PropTypes.bool,
@@ -119,5 +121,3 @@ MainCard.propTypes = {
   content: PropTypes.bool,
   children: PropTypes.node,
 };
-
-export default MainCard;

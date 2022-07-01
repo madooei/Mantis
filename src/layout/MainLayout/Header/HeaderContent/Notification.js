@@ -18,7 +18,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import MainCard from "components/MainCard";
-import Transitions from "components/@extended/Transitions";
+import Transitions from "components/Transitions";
 import {
   BellOutlined,
   CloseOutlined,
