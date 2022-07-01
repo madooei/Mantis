@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 import { useTheme } from "@mui/material/styles";
-import { AppBar, IconButton, Toolbar, useMediaQuery } from "@mui/material";
+import AppBar from "@mui/material/AppBar";
+import IconButton from "@mui/material/IconButton";
+import Toolbar from "@mui/material/Toolbar";
+import { useMediaQuery } from "@mui/material";
 import { AppBarStyled } from "./AppBarStyled";
 import HeaderContent from "./HeaderContent";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";

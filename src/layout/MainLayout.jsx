@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
-import { Box, Toolbar, useMediaQuery } from "@mui/material";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import { useMediaQuery } from "@mui/material";
 import Drawer from "./Drawer";
 import Header from "./Header";
 import { menuItems } from "../menu-items";

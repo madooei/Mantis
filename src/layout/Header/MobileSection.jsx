@@ -1,14 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { useTheme } from "@mui/material/styles";
-import {
-  AppBar,
-  Box,
-  ClickAwayListener,
-  IconButton,
-  Paper,
-  Popper,
-  Toolbar,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
+import IconButton from "@mui/material/IconButton";
+import Paper from "@mui/material/Paper";
+import Popper from "@mui/material/Popper";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
 import Search from "./Search";
 import Profile from "./Profile";
 import Transitions from "../../components/Transitions";

@@ -2,14 +2,12 @@ import PropTypes from "prop-types";
 import { forwardRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
-import {
-  Avatar,
-  Chip,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
+import Chip from "@mui/material/Chip";
 import useStore from "../../services/store";
 
 function NavItem({ item, level }) {

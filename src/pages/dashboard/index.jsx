@@ -1,19 +1,17 @@
 import { useState } from "react";
-import {
-  Avatar,
-  Box,
-  Button,
-  Grid,
-  List,
-  ListItemAvatar,
-  ListItemButton,
-  ListItemSecondaryAction,
-  ListItemText,
-  MenuItem,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import List from "@mui/material/List";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemSecondaryAction from "@mui/material/ListItemSecondaryAction";
+import ListItemText from "@mui/material/ListItemText";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import MenuItem from "@mui/material/MenuItem";
+import TextField from "@mui/material/TextField";
 import OrdersTable from "./OrdersTable";
 import IncomeAreaChart from "./IncomeAreaChart";
 import MonthlyBarChart from "./MonthlyBarChart";

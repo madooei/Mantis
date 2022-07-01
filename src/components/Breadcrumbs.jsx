@@ -2,7 +2,8 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import MuiBreadcrumbs from "@mui/material/Breadcrumbs";
-import { Grid, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import MainCard from "./MainCard";
 
 function Breadcrumbs({ navigation, title, ...others }) {

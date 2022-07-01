@@ -1,4 +1,7 @@
-import { Box, FormControl, InputAdornment, OutlinedInput } from "@mui/material";
+import Box from "@mui/material/Box";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import OutlinedInput from "@mui/material/OutlinedInput";
 import { SearchOutlined } from "@ant-design/icons";
 
 function Search() {

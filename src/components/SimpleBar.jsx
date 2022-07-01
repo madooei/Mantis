@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { alpha, styled } from "@mui/material/styles";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import SimpleBar from "simplebar-react";
 import { BrowserView, MobileView } from "react-device-detect";
 

@@ -1,4 +1,5 @@
-import { Box, useMediaQuery } from "@mui/material";
+import Box from "@mui/material/Box";
+import { useMediaQuery } from "@mui/material";
 import Search from "./Search";
 import Profile from "./Profile";
 import Notification from "./Notification";

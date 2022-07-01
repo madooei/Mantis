@@ -1,12 +1,10 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { useTheme } from "@mui/material/styles";
-import {
-  List,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
+import List from "@mui/material/List";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
 import { EditOutlined, LogoutOutlined, UserOutlined } from "@ant-design/icons";
 
 function ProfileMenu({ handleLogout }) {

@@ -1,18 +1,16 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
-import {
-  Box,
-  Link,
-  Stack,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Typography,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
 import NumberFormat from "react-number-format";
 import Dot from "../../components/Dot";
 
@@ -155,8 +153,6 @@ OrderStatus.propTypes = {
   status: PropTypes.number,
 };
 
-// ==============================|| ORDER TABLE ||============================== //
-
 export default function OrderTable() {
   const [order] = useState("asc");
   const [orderBy] = useState("trackingNo");
@@ -179,7 +175,7 @@ export default function OrderTable() {
         <Table
           aria-labelledby="tableTitle"
           sx={{
-            "& .MuiTableCell-root:first-child": {
+            "& .MuiTableCell-root:first-of-type": {
               pl: 2,
             },
             "& .MuiTableCell-root:last-child": {

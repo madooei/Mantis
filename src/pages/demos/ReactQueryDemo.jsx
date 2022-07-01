@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useQuery } from "react-query";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import MainCard from "../../components/MainCard";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";

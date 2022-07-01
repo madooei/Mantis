@@ -1,14 +1,12 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-import {
-  Box,
-  CardActions,
-  CardContent,
-  Collapse,
-  Divider,
-  IconButton,
-  Tooltip,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import Collapse from "@mui/material/Collapse";
+import Divider from "@mui/material/Divider";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import reactElementToJSXString from "react-element-to-jsx-string";
 import { CodeOutlined, CopyOutlined } from "@ant-design/icons";

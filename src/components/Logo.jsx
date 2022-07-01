@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { ButtonBase, Stack, Typography } from "@mui/material";
+import ButtonBase from "@mui/material/ButtonBase";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import { config } from "../config";
 // import logoDark from '../assets/images/logo-dark.svg';
 import logo from "../assets/images/logo.svg";

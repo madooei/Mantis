@@ -1,7 +1,7 @@
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import MainCard from "../../components/MainCard";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
 const localizer = momentLocalizer(moment); // or globalizeLocalizer

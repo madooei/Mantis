@@ -1,22 +1,20 @@
 import { useRef, useState } from "react";
 import { useTheme } from "@mui/material/styles";
-import {
-  Avatar,
-  Badge,
-  Box,
-  ClickAwayListener,
-  Divider,
-  IconButton,
-  List,
-  ListItemButton,
-  ListItemAvatar,
-  ListItemText,
-  ListItemSecondaryAction,
-  Paper,
-  Popper,
-  Typography,
-  useMediaQuery,
-} from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import Badge from "@mui/material/Badge";
+import Box from "@mui/material/Box";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
+import Divider from "@mui/material/Divider";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemSecondaryAction from "@mui/material/ListItemSecondaryAction";
+import ListItemText from "@mui/material/ListItemText";
+import Paper from "@mui/material/Paper";
+import Popper from "@mui/material/Popper";
+import Typography from "@mui/material/Typography";
+import { useMediaQuery } from "@mui/material";
 import MainCard from "../../components/MainCard";
 import Transitions from "../../components/Transitions";
 import { BellOutlined, CloseOutlined, GiftOutlined } from "@ant-design/icons";

@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { forwardRef } from "react";
-import { Fade, Box, Grow } from "@mui/material";
+import Fade from "@mui/material/Fade";
+import Box from "@mui/material/Box";
+import Grow from "@mui/material/Grow";
 
 const Transitions = forwardRef(
   ({ children, position, type, ...others }, ref) => {

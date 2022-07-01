@@ -2,13 +2,11 @@ import PropTypes from "prop-types";
 import { forwardRef } from "react";
 import MainCardFooter from "./MainCardFooter";
 import { useTheme } from "@mui/material/styles";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Divider,
-  Typography,
-} from "@mui/material";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardHeader from "@mui/material/CardHeader";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
 
 const headerSX = {
   p: 2.5,

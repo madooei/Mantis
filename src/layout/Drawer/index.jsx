@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 import { useMemo } from "react";
 import { useTheme } from "@mui/material/styles";
-import { Box, Drawer, useMediaQuery } from "@mui/material";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import { useMediaQuery } from "@mui/material";
 import DrawerHeader from "./DrawerHeader";
 import DrawerContent from "./DrawerContent";
 import { MiniDrawerStyled } from "./MiniDrawerStyled";

@@ -1,20 +1,18 @@
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
-import {
-  Button,
-  Checkbox,
-  Divider,
-  FormControlLabel,
-  FormHelperText,
-  Grid,
-  Link,
-  IconButton,
-  InputAdornment,
-  InputLabel,
-  OutlinedInput,
-  Stack,
-  Typography,
-} from "@mui/material";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import InputAdornment from "@mui/material/InputAdornment";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import Checkbox from "@mui/material/Checkbox";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormHelperText from "@mui/material/FormHelperText";
+import Link from "@mui/material/Link";
+import InputLabel from "@mui/material/InputLabel";
 import * as Yup from "yup";
 import { Formik } from "formik";
 import AnimateButton from "../../components/AnimateButton";
