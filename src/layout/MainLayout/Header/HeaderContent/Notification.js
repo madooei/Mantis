@@ -23,8 +23,6 @@ import {
   BellOutlined,
   CloseOutlined,
   GiftOutlined,
-  MessageOutlined,
-  SettingOutlined,
 } from "@ant-design/icons";
 
 const avatarSX = {
