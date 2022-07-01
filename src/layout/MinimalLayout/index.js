@@ -1,11 +1,8 @@
 import { Outlet } from 'react-router-dom';
 
-// ==============================|| MINIMAL LAYOUT ||============================== //
-
-const MinimalLayout = () => (
-    <>
-        <Outlet />
-    </>
-);
+// This minimal layout is used by Login and Register pages
+function MinimalLayout () {
+  return (<Outlet/>);
+}
 
 export default MinimalLayout;

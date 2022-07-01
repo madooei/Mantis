@@ -1,20 +1,19 @@
-// project import
-import Navigation from './Navigation';
-import SimpleBar from 'components/third-party/SimpleBar';
+import Navigation from "./Navigation";
+import SimpleBar from "components/third-party/SimpleBar";
 
-// ==============================|| DRAWER CONTENT ||============================== //
-
-const DrawerContent = () => (
+function DrawerContent() {
+  return (
     <SimpleBar
-        sx={{
-            '& .simplebar-content': {
-                display: 'flex',
-                flexDirection: 'column'
-            }
-        }}
+      sx={{
+        "& .simplebar-content": {
+          display: "flex",
+          flexDirection: "column",
+        },
+      }}
     >
-        <Navigation />
+      <Navigation />
     </SimpleBar>
-);
+  );
+}
 
 export default DrawerContent;
