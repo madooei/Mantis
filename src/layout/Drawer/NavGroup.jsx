@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
-import { useSelector } from "react-redux";
 import { Box, List, Typography } from "@mui/material";
 import NavItem from "./NavItem";
+import useStore from "../../services/store";
 
 function NavGroup({ item }) {
-  const menu = useSelector((state) => state.menu);
-  const { drawerOpen } = menu;
+  const { openSidebar } = useStore();
 
   const navCollapse = item.children?.map((menuItem) => {
     switch (menuItem.type) {
@@ -40,7 +39,7 @@ function NavGroup({ item }) {
     <List
       subheader={
         item.title &&
-        drawerOpen && (
+        openSidebar && (
           <Box sx={{ pl: 3, mb: 1.5 }}>
             <Typography variant="subtitle2" color="textSecondary">
               {item.title}
@@ -49,7 +48,7 @@ function NavGroup({ item }) {
           </Box>
         )
       }
-      sx={{ mb: drawerOpen ? 1.5 : 0, py: 0, zIndex: 0 }}
+      sx={{ mb: openSidebar ? 1.5 : 0, py: 0, zIndex: 0 }}
     >
       {navCollapse}
     </List>

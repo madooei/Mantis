@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { forwardRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
 import { useTheme } from "@mui/material/styles";
 import {
   Avatar,
@@ -11,13 +10,11 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import { activeItem } from "store/reducers/menu";
+import useStore from "../../services/store";
 
 function NavItem({ item, level }) {
   const theme = useTheme();
-  const dispatch = useDispatch();
-  const menu = useSelector((state) => state.menu);
-  const { drawerOpen, openItem } = menu;
+  const { openSidebar, selectedSidebarItem, selectSidebarItem } = useStore();
 
   let itemTarget = "_self";
   if (item.target) {
@@ -34,17 +31,18 @@ function NavItem({ item, level }) {
   }
 
   const itemHandler = (id) => {
-    dispatch(activeItem({ openItem: [id] }));
+    selectSidebarItem(id);
   };
 
   const Icon = item.icon;
   const itemIcon = item.icon ? (
-    <Icon style={{ fontSize: drawerOpen ? "1rem" : "1.25rem" }} />
+    <Icon style={{ fontSize: openSidebar ? "1rem" : "1.25rem" }} />
   ) : (
     false
   );
 
-  const isSelected = openItem.findIndex((id) => id === item.id) > -1;
+  // const isSelected = openItem.findIndex((id) => id === item.id) > -1;
+  const isSelected = item.id === selectedSidebarItem;
 
   // active menu item on page load
   useEffect(() => {
@@ -53,7 +51,7 @@ function NavItem({ item, level }) {
       .split("/")
       .findIndex((id) => id === item.id);
     if (currentIndex > -1) {
-      dispatch(activeItem({ openItem: [item.id] }));
+      selectSidebarItem(item.id);
     }
     // eslint-disable-next-line
   }, []);
@@ -69,9 +67,9 @@ function NavItem({ item, level }) {
       selected={isSelected}
       sx={{
         zIndex: 1201,
-        pl: drawerOpen ? `${level * 28}px` : 1.5,
-        py: !drawerOpen && level === 1 ? 1.25 : 1,
-        ...(drawerOpen && {
+        pl: openSidebar ? `${level * 28}px` : 1.5,
+        py: !openSidebar && level === 1 ? 1.25 : 1,
+        ...(openSidebar && {
           "&:hover": {
             bgcolor: "primary.lighter",
           },
@@ -85,7 +83,7 @@ function NavItem({ item, level }) {
             },
           },
         }),
-        ...(!drawerOpen && {
+        ...(!openSidebar && {
           "&:hover": {
             bgcolor: "transparent",
           },
@@ -103,7 +101,7 @@ function NavItem({ item, level }) {
           sx={{
             minWidth: 28,
             color: isSelected ? iconSelectedColor : textColor,
-            ...(!drawerOpen && {
+            ...(!openSidebar && {
               borderRadius: 1.5,
               width: 36,
               height: 36,
@@ -113,7 +111,7 @@ function NavItem({ item, level }) {
                 bgcolor: "secondary.lighter",
               },
             }),
-            ...(!drawerOpen &&
+            ...(!openSidebar &&
               isSelected && {
                 bgcolor: "primary.lighter",
                 "&:hover": {
@@ -125,7 +123,7 @@ function NavItem({ item, level }) {
           {itemIcon}
         </ListItemIcon>
       )}
-      {(drawerOpen || (!drawerOpen && level !== 1)) && (
+      {(openSidebar || (!openSidebar && level !== 1)) && (
         <ListItemText
           primary={
             <Typography
@@ -137,7 +135,7 @@ function NavItem({ item, level }) {
           }
         />
       )}
-      {(drawerOpen || (!drawerOpen && level !== 1)) && item.chip && (
+      {(openSidebar || (!openSidebar && level !== 1)) && item.chip && (
         <Chip
           color={item.chip.color}
           variant={item.chip.variant}

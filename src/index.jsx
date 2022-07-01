@@ -2,18 +2,14 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "simplebar/src/simplebar.css";
-import { Provider as ReduxProvider } from "react-redux";
 import "assets/styles/apex-chart.css";
 import App from "./App";
-import { store } from "store";
 
 ReactDOM.render(
   <StrictMode>
-    <ReduxProvider store={store}>
-      <BrowserRouter basename="/free">
-        <App />
-      </BrowserRouter>
-    </ReduxProvider>
+    <BrowserRouter basename="/free">
+      <App />
+    </BrowserRouter>
   </StrictMode>,
   document.getElementById("root")
 );
