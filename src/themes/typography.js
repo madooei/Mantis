@@ -1,4 +1,4 @@
-const Typography = (fontFamily) => ({
+export const Typography = (fontFamily) => ({
   htmlFontSize: 16,
   fontFamily,
   fontWeightLight: 300,
@@ -65,5 +65,3 @@ const Typography = (fontFamily) => ({
     textTransform: "capitalize",
   },
 });
-
-export default Typography;

@@ -4,7 +4,7 @@ import MainLayout from "layout/MainLayout";
 const DashboardDefault = Loadable(lazy(() => import("pages/dashboard")));
 const SamplePage = Loadable(lazy(() => import("pages/demos/SamplePage")));
 
-const MainRoutes = {
+export const MainRoutes = {
   path: "/",
   element: <MainLayout />,
   children: [
@@ -27,5 +27,3 @@ const MainRoutes = {
     },
   ],
 };
-
-export default MainRoutes;

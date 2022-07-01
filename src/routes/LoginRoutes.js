@@ -6,7 +6,7 @@ const AuthRegister = Loadable(
   lazy(() => import("pages/authentication/Register"))
 );
 
-const LoginRoutes = {
+export const LoginRoutes = {
   path: "/",
   element: <MinimalLayout />,
   children: [
@@ -20,5 +20,3 @@ const LoginRoutes = {
     },
   ],
 };
-
-export default LoginRoutes;
