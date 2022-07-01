@@ -1,9 +1,12 @@
 import { lazy } from "react";
 import Loadable from "../components/Loadable";
 import MainLayout from "../layout/MainLayout";
+import ReactBigCalendarDemo from "../pages/demos/ReactBigCalendarDemo";
 const DashboardDefault = Loadable(lazy(() => import("../pages/dashboard")));
 const SamplePage = Loadable(lazy(() => import("../pages/demos/SamplePage")));
-const ReactQueryDemo = Loadable(lazy(() => import("../pages/ReactQueryDemo")));
+const ReactQueryDemo = Loadable(
+  lazy(() => import("../pages/demos/ReactQueryDemo"))
+);
 
 export const MainRoutes = {
   path: "/",
@@ -29,6 +32,10 @@ export const MainRoutes = {
     {
       path: "react-query",
       element: <ReactQueryDemo />,
+    },
+    {
+      path: "big-cal",
+      element: <ReactBigCalendarDemo />,
     },
   ],
 };
