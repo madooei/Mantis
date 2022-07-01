@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
-import MainCard from "components/MainCard";
+import MainCard from "./MainCard";
 import { RiseOutlined, FallOutlined } from "@ant-design/icons";
 
 function AnalyticEcommerce({ color, title, count, percentage, isLoss, extra }) {

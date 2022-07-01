@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 import { presetPalettes } from "@ant-design/colors";
-import { Theme as ThemeOption} from "./theme";
+import { Theme as ThemeOption } from "./theme";
 
 export const Palette = (mode) => {
   const colors = presetPalettes;

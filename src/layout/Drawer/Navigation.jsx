@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import NavGroup from "./NavGroup";
-import { menuItems } from "menu-items";
+import { menuItems } from "../../menu-items";
 
 function Navigation() {
   const navGroups = menuItems.items.map((item) => {

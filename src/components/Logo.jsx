@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { ButtonBase, Stack, Typography } from "@mui/material";
-import { config } from "config";
+import { config } from "../config";
 // import logoDark from '../assets/images/logo-dark.svg';
 import logo from "../assets/images/logo.svg";
 import { useTheme } from "@mui/material/styles";

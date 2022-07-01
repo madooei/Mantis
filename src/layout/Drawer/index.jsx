@@ -5,7 +5,7 @@ import { Box, Drawer, useMediaQuery } from "@mui/material";
 import DrawerHeader from "./DrawerHeader";
 import DrawerContent from "./DrawerContent";
 import { MiniDrawerStyled } from "./MiniDrawerStyled";
-import { drawerWidth } from "config";
+import { drawerWidth } from "../../config";
 
 function MainDrawer({ open, handleDrawerToggle, window }) {
   const theme = useTheme();

@@ -17,7 +17,7 @@ import {
 } from "@mui/material";
 import * as Yup from "yup";
 import { Formik } from "formik";
-import AnimateButton from "components/AnimateButton";
+import AnimateButton from "../../components/AnimateButton";
 import { EyeOutlined, EyeInvisibleOutlined } from "@ant-design/icons";
 import OtherLogin from "./OtherLogin";
 

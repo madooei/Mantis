@@ -1,5 +1,5 @@
 export const config = {
-  defaultPath: "/dashboard/default",
+  defaultPath: "/",
   fontFamily: `'Public Sans', sans-serif`,
   i18n: "en",
   miniDrawer: false,

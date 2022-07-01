@@ -12,8 +12,8 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import MainCard from "components/MainCard";
-import Transitions from "components/Transitions";
+import MainCard from "../../components/MainCard";
+import Transitions from "../../components/Transitions";
 import ProfileMenu from "./ProfileMenu";
 import { LogoutOutlined } from "@ant-design/icons";
 

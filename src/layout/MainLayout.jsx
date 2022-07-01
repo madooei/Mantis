@@ -4,8 +4,8 @@ import { useTheme } from "@mui/material/styles";
 import { Box, Toolbar, useMediaQuery } from "@mui/material";
 import Drawer from "./Drawer";
 import Header from "./Header";
-import { menuItems } from "menu-items";
-import Breadcrumbs from "components/Breadcrumbs";
+import { menuItems } from "../menu-items";
+import Breadcrumbs from "../components/Breadcrumbs";
 import useStore from "../services/store";
 
 function MainLayout() {
