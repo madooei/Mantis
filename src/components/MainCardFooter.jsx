@@ -41,7 +41,7 @@ function MainCardFooter({ children }) {
             flexItem
             sx={{ mx: 1 }}
           />
-          <Tooltip title="Show the source" placement="top-end">
+          <Tooltip title="Show card footer" placement="top-end">
             <IconButton
               sx={{ fontSize: "0.875rem" }}
               size="small"
