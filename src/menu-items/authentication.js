@@ -5,13 +5,13 @@ const icons = {
   ProfileOutlined,
 };
 
-export const pages = {
+export const authentication = {
   id: "authentication",
   title: "Authentication",
   type: "group",
   children: [
     {
-      id: "login1",
+      id: "login",
       title: "Login",
       type: "item",
       url: "/login",
@@ -19,7 +19,7 @@ export const pages = {
       target: true,
     },
     {
-      id: "register1",
+      id: "register",
       title: "Register",
       type: "item",
       url: "/register",
