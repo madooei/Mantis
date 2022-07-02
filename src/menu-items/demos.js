@@ -24,12 +24,5 @@ export const demos = {
       url: "/react-query",
       icon: icons.ChromeOutlined,
     },
-    {
-      id: "big-cal",
-      title: "React BigCalendar",
-      type: "item",
-      url: "/big-cal",
-      icon: icons.ChromeOutlined,
-    },
   ],
 };
