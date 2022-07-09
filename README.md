@@ -1,19 +1,3 @@
-# Project Name
+# Hourly
 
-A brief description of your project.
-
-## Links
-
-**Production**
-
-- [Client]()
-- [Server]()
-
-**Development**
-
-- [Client]()
-- [Server]()
-
-**Documentation**
-
-- [Notion]()
+[MUI Mantis Free Template](https://mui.com/store/items/mantis-free-react-admin-dashboard-template/) is simplified for the Hourly project!
